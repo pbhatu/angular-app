@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="./login.css">
+</head>
+</head>
+<body>
+<div class="row">
+<div class = "container ">
+  <div class="box col-lg-4 col-lg-offset-4">
+    <form name="login" class="form_details" ng-submit="clicked(login.$valid)" novalidate>
+        <h3 class="heading">Log In</h3>
+        <hr class="line"><br>
+        <div class="form-group">
+        <input type="text" class="form-control input-username" name="email" type="email" placeholder="Username" ng-model="uname" required=""/>
+        <p ng-show="(login.email.$invalid) && (!login.email.$pristine)" class="help-block">Enter a valid email.</p>
+        </div>
+         <div class="form-group">
+
+        <input type="password" class="form-control input-password" name="Password" placeholder="Password" ng-model="pass" required=""/>
+          <p ng-show="(login.Password.$invalid) && (!login.Password.$pristine)" class="help-block">Enter a valid password.</p>
+
+        </div>
+      <!--  <div class="form-group">
+           <div class="check" ng-show="login.Username.$valid">
+            Please Enter correct Username
+           </div>
+           <div class="check" ng-show="login.Password.$valid">
+            Please Enter correct password
+          </div>
+        </div>-->
+        <button class="btn btn-lg btn-primary btn-block "  name="Submit" value="Login" type="Submit" ng-disabled="login.$invalid">Login</button>
+    </form>
+  </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.box {    
+	margin-top: 90px;
+	margin-bottom: 50px;
+	margin-left:300px;
+	border-radius:100px;
+	width:500px;
+}
+.line
+{
+	height:2px;
+	background: black;
+
+}
+.form_details {
+
+  padding: 30px 58px 56px;
+  margin: 0 auto;
+  background-color: f7f7f7;
+  border: 6px ;
+ }
+
+.heading {
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.input-username {
+
+  font-size: 16px;
+  height: auto;
+
+}

@@ -1,0 +1,28 @@
+{
+  "name": "sample-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbhatu/Angular_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbhatu/Angular_app/issues"
+  },
+  "homepage": "https://github.com/pbhatu/Angular_app#readme",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-cookies": "^1.6.6",
+    "angular-modal-service": "^0.12.1",
+    "angular-route": "^1.6.5",
+    "angular-ui-bootstrap": "^2.5.0",
+    "angularjs-toaster": "^2.1.0",
+    "sweetalert": "^1.1.3"
+  }
+}
