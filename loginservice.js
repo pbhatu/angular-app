@@ -69,7 +69,7 @@ LoginService.service('LoginService', function ($http,$location,$cookies)
     	 }
     	 this.clearcredentials=function()
     	 {
-    	 	$cookies.remove('username');
+    	 	
     	 	console.log($cookies.get('username'));
     	 	$location.url("/");
 

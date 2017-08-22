@@ -15,24 +15,13 @@ success.controller('SuccessController',['$scope','$cookies','$location',function
     		$location.url("/");
 
     	}
+    	$scope.logout = function()
+   		 {
 
-
-
-	$scope.checkAuth = function()
-	{
-		if($cookies.get('username'))
-    	{
-    	 	console.log($cookies.get('username'))
-    	 	$location.url("/success");
-    	}
-    	else
-    	{
-    		console.log("Cookie is",$cookies.get('username'))
+    		$cookies.remove('username');
     		$location.url("/");
+    	 }
 
-    	}
-
-	}	
 
 }
 ])

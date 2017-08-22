@@ -1,4 +1,4 @@
-var login=angular.module("login",['LoginService']);
+var login=angular.module("login",[]);
 
 login.controller("loginController",['$scope','$location','LoginService','$http','$cookies',function($scope, $location,LoginService,$http,$cookies)
 {
@@ -16,10 +16,6 @@ login.controller("loginController",['$scope','$location','LoginService','$http',
         LoginService.validate($scope.uname,$scope.pass)
       } 
     };
-    $scope.logout = function()
-    {
-    	LoginService.clearcredentials();
-    		
-    }
+    
 }
 ])
