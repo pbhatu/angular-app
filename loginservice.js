@@ -21,7 +21,7 @@ LoginService.service('LoginService', function ($http,$location,$cookies)
 		    	 			$cookies.put('username',users[i].name,{'expires' : expiresValue})
 		    	 			console.log($cookies.get('username'));
 		    	 			swal("Good job!", "You Logged in!", "success");
-		    	 			$location.url("/success");
+		    	 			$location.url("/home");
 		    	 			islogin=true;
 		    	 			break;
 		    	 		}
@@ -60,7 +60,7 @@ LoginService.service('LoginService', function ($http,$location,$cookies)
     	 {
     	 	if($cookies.get(username))
     	 	{
-    	 		$location.url("/success");
+    	 		$location.url("/home");
     	 	}
     	 	else if(!$cookies.get(username))
     	 	{

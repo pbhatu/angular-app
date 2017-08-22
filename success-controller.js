@@ -7,7 +7,7 @@ success.controller('SuccessController',['$scope','$cookies','$location',function
 		if($cookies.get('username'))
     	{
     	 	console.log($cookies.get('username'))
-    	 	$location.url("/success");
+    	 	$location.url("/home");
     	}
     	else
     	{

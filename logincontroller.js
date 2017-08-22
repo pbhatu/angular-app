@@ -6,7 +6,7 @@ login.controller("loginController",['$scope','$location','LoginService','$http',
 		if($cookies.get('username'))
     	{
     	 	console.log($cookies.get('username'))
-    	 	$location.url("/success");
+    	 	$location.url("/home");
     	}
     $scope.clicked = function(valid)
     {
