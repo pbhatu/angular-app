@@ -1,11 +1,11 @@
-var LoginService = angular.module('LoginService', []);
+var loginservice = angular.module('LoginServices', []);
 console.log("Yo")
-LoginService.service('LoginService', function ($http,$location,$cookies) 
+loginservice.service('LoginService', function ($http,$location,$cookies)
 {
     this.validate = function(username,password)
     	 {
-    	 	var expiresValue = new Date();    
-		    expiresValue.setMinutes(expiresValue.getMinutes() + 1); 
+    	 	var expiresValue = new Date();
+		    expiresValue.setMinutes(expiresValue.getMinutes() + 1);
 		    console.log(expiresValue);
     	 			$http.get('details.json')
     	 			.then(function(response)
@@ -17,7 +17,7 @@ LoginService.service('LoginService', function ($http,$location,$cookies)
 		    	 		if( (username==users[i].name) && (password==users[i].password) )
 		    	 		{
 		    	 			console.log(expiresValue)
-		    	 			
+
 		    	 			$cookies.put('username',users[i].name,{'expires' : expiresValue})
 		    	 			console.log($cookies.get('username'));
 		    	 			swal("Good job!", "You Logged in!", "success");
@@ -51,9 +51,9 @@ LoginService.service('LoginService', function ($http,$location,$cookies)
 				                password='';
 		    	 		}
 
-    	 			
+
     	 			})
-    	 			
+
     	 }
 
     	 this.auth =function(username)
@@ -69,11 +69,11 @@ LoginService.service('LoginService', function ($http,$location,$cookies)
     	 }
     	 this.clearcredentials=function()
     	 {
-    	 	
+
     	 	console.log($cookies.get('username'));
     	 	$location.url("/");
 
-    	 }  
+    	 }
 
 }
 );

@@ -1,3 +1,1 @@
-var app=angular.module("App",['login','Success','ngRoute','ngCookies','LoginService']);
-
-
+var app=angular.module("App",['ProductServices','Login','Success','ngRoute','ngCookies','LoginServices','ngResource']);

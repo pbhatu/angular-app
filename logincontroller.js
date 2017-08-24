@@ -1,4 +1,4 @@
-var login=angular.module("login",[]);
+var login=angular.module("Login",[]);
 
 login.controller("loginController",['$scope','$location','LoginService','$http','$cookies',function($scope, $location,LoginService,$http,$cookies)
 {
@@ -14,8 +14,7 @@ login.controller("loginController",['$scope','$location','LoginService','$http',
       {
         console.log("Yes");
         LoginService.validate($scope.uname,$scope.pass)
-      } 
+      }
     };
-    
 }
 ])

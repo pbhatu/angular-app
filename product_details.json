@@ -1,0 +1,72 @@
+{
+  "Phones":
+[
+  {
+    "name" : "Google Nexas",
+    "price":"15000",
+    "category":"Android",
+    "imageurl":"images/iphone7.jpeg"
+  },
+  {
+    "name" : "Redmi Note 3g",
+    "price" : "13000",
+    "category" : "Android",
+    "imageurl":"images/iphone7.jpeg"
+  },
+  {
+    "name" : "Iphone 5s",
+    "price":"20000",
+    "category":"IOS",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" : "Iphone 6s",
+    "price":"45000",
+    "category":"IOS",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" : "Nokia 360",
+    "price":"60000",
+    "category":"Windows",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" : "Nokia 120",
+    "price":"6000",
+    "category":"Windows",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" : "Lumia 450",
+    "price":"19000",
+    "category":"Windows",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" : "HTC 520",
+    "price":"26000",
+    "category":"Android",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" : "Iphone 7",
+    "price":"34000",
+    "category":"IOS",
+    "imageurl":"images/iphone7.jpeg"
+
+  },
+  {
+    "name" :"Micromax",
+    "price":"10000",
+    "category":"Android",
+    "imageurl":"images/iphone7.jpeg"
+  }
+]
+}

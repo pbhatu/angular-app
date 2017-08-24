@@ -1,11 +1,11 @@
 {
 
- "users": 
+ "users":
  [
   {
    "name": "parth@bizongo.in",
    "password": "parth123"
-  }, 
+  },
   {
     "name" : "neha@bizongo.in",
     "password" : "neha123"

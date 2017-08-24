@@ -1,13 +1,97 @@
-
+<html>
+<head>
  <link rel="stylesheet" type="text/css" href="./success.css">
-<div class="row" ng-controller="SuccessController">
-  <div class="container">
-    <form align="right" name="form1" ng-submit="logout()">
-	  <label class="logout_button">
-	  <input name="submit" type="submit" id="submit" value="log out">
-	  </label>
-	</form>
+ </head>
+<body ng-controller="SuccessController">
 
+<div class="container-fluid header">
+  <div class="navbar-brand">
+    <h4> Products </h4>
+  </div>
+  <div class="nav navbar-nav navbar-right">
+    <button class="btn navbar-btn" ng-click="logout()"><span class="glyphicon glyphicon-user"></span>Logout</button>
+      <!-- <a ng-click="logout()"><span class="glyphicon glyphicon-user"></span> Log Out </a> -->
   </div>
 </div>
+<!-- <div class="sidebar">
 
+<label>
+  Search:
+  <input ng-model="query">
+</label>
+</div> -->
+
+
+
+<div class="row container-fluid" ng-init="fetchProductDetails()">
+  <div class="sidebar col-lg-2">
+    <label>
+      Search:
+      <input ng-model="query">
+    </label>
+
+    <div class = "dropdown">
+     <!-- <button type = "button" class = "btn dropdown-toggle" data-toggle = "dropdown">
+
+        <span class = "caret"></span>
+     </button> -->
+<!--
+     <ul class = "dropdown-menu">
+        <li >
+           <a>Android</a>
+        </li>
+
+        <li >
+           <a>IOS</a>
+        </li>
+
+        <li >
+           <a>Windows</a>
+        </li>
+
+      </ul> -->
+      <select ng-model="selectedcategory">
+
+          <option value="" selected="selected">Filter By category</option>
+           <option value="All">All </option>
+          <option value="Android">Android</option>
+          <option value="IOS">IOS</option>
+          <option value="Windows">Windows</option>
+
+      </select>
+
+
+    </div>
+
+    <div class="sort">
+      <select ng-model="orderby">
+        <option value="" selected="selected">Sort By</option>
+         <option value="name">Alphabetically</option>
+         <option value="price">Price</option>
+       </select>
+     </div>
+
+  </div>
+  <div class="row col-lg-10 mobile-panel">
+      <div class="col-lg-4 phones" ng-repeat="phone in phonedetails | filter:query | selectcategory:selectedcategory | orderBy:orderby ">
+      Name:{{phone.name}}<br>
+      Price:{{phone.price}}<br>
+      Category:{{phone.category}}<br>
+        <div class="images">
+         <img ng-src="{{phone.imageurl}}"/>
+       </div>
+
+      </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
+
+<!-- filter:{category:selectedcategory} -->
+<!-- <label>
+  Search:
+  <input ng-model="query">
+</label> -->
